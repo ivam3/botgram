@@ -31,11 +31,11 @@
 
 `$ python add2group.py members.csv`
 
--        DISCLAIMER
+# DISCLAIMER
 If the law is violated with it's use, this would be the responsibility of the user who handled it..      Ivam3 is not responsible for the misuse that can be given to everything that this tool entails
 
 To get help about how to use it and/or to report some issues join to :
 
-        ]> https://t.me/Ivam3_Bot
+ • https://t.me/Ivam3_Bot
 
---
+
