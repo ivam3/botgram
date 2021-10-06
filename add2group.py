@@ -88,16 +88,16 @@ for chat in chats:
 print(cy+'(_>)─➤ Choose a group to add members')
 i=0
 for group in groups:
-    print(cy+' ╰─['+bl+str(i)+cy+']─➤'+bl+' - '+group.title)
+    print(cy+' ╰─['+bl+str(i)+cy+']─➤ '+bl+group.title)
     i+=1
 
 g_index = input("\n"+cy+"(_>)─➤"+bl+" Enter a Number : "+wi)
 target_group=groups[int(g_index)]
  
 target_group_entity = InputPeerChannel(target_group.id,target_group.access_hash)
- 
-print(cy+"(1)─➤ add member by user ID\n(2)─➤ add member by username ")
-mode = int(input(bl+"Input : "+wi)) 
+
+print(cy+" ╰─["+bl+"1"+cy+"]─➤"+bl+" add member by user ID\n"+cy+" ╰─["+bl+"2"+cy+"]─➤"+bl+" add member by username ")
+mode = int(input(cy+"Input : "+wi)) 
 n = 0
  
 for user in users:
@@ -113,12 +113,12 @@ for user in users:
 	        elif mode == 2:
 	            user_to_add = InputPeerUser(user['id'], user['access_hash'])
 	        else:
-	            sys.exit(re+"(_>)─➤ Invalid Mode Selected. Please Try Again.")
+	            sys.exit(re+"(_>)─➤ Invalid mode selected. Please try again.")
 	        client(InviteToChannelRequest(target_group_entity,[user_to_add]))
 	        print(cy+"(_>)─➤ Waiting for 5-10 Seconds...")
 	        time.sleep(random.randrange(5, 10))
 	    except PeerFloodError:
-	        print(re+"(_>)─➤ Getting Flood Error from telegram. \n ╰──➤ Script is stopping now. \n ╰──➤ Please try again after some time.")
+	        print(re+"(_>)─➤ Getting flood error from Telegram. \n ╰──➤ Script is stopping now. \n ╰──➤ Please try again after some time.")
 	    except UserPrivacyRestrictedError:
 	        print(re+"(_>)─➤ The user's privacy settings do not allow you to do this. \n ╰──➤ Skipping.")
 	    except:
