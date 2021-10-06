@@ -18,6 +18,10 @@
 
 `$ python setup.py --config`
 
+* To merge 2 .csv files in one 
+
+`$ python setup.py --merge file1.csv file2.csv`
+
 * To Genrate User Data
 
 `$ python getdata.py`
