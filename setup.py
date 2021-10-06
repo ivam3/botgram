@@ -32,7 +32,7 @@ def requirements():
 		pass
 	print(cy+'(_>)─➤'+bl+' installing requierments ...'+wi)
 	os.system("""
-		python3 -m pip install telethon requests configparser
+		python -m pip install numpy telethon requests configparser
 		touch config.data
 		""")
 	banner()
