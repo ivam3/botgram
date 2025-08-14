@@ -1,6 +1,6 @@
 # BOTGRAM v.1 2021 by @Ivam3
 
-- Botgram help you to fetch all information about Telegram group members that you manage. It automates the mass sending of messages and the addition of members to other groups from the command line (CLI).
+- Botgram help you to fetch all information about Telegram group members that you manage. It automates the mass sending of messages and the addition of members to other groups from the command line (CLI) and more.
 
 # Setting
 
@@ -12,15 +12,13 @@
 
 `$ pkg install -y git python`
 
-`$ git clone https://github.com/ivam3/botgram.git`
-
-`$ cd botgram`
+`$ git clone https://github.com/ivam3/botgram.git && cd $_`
 
 * Install requierments
 
 `$ python setup.py --install`
 
-* setup configration file ( apiID, apiHASH )
+* setup configration file ( apiID, apiHASH, phone number )
 
 `$ python setup.py --config`
 
@@ -41,11 +39,20 @@
 
 `$ python add2group.py members.csv`
 
+* Scrape posts from specific member
+
+`$ python getUserPosts.py group_username target_username`
+
 # DISCLAIMER
-If the law is violated with it's use, this would be the responsibility of the user who handled it..      Ivam3 is not responsible for the misuse that can be given to everything that this tool entails
+If the law is violated with it's use, this would be the responsibility of the user who handled it...
+Ivam3 is not responsible for the misuse that can be given to everything that this tool entails
 
 To get help about how to use it and/or to report some issues join to :
 
  • https://t.me/Ivam3_Bot
 
+### License
 
+GNU
+
+##### Follow me on [Socials Network](https://link.space/@ivam3)

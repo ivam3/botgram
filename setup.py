@@ -45,7 +45,7 @@ def config_setup():
     cpass.add_section('cred')
     xid = input(cy+"(_>)─➤"+bl+" enter api ID : "+wi)
     cpass.set('cred', 'id', xid)
-    xhash = input(cy+"(_>)─➤"+bl+"enter hash ID : "+wi)
+    xhash = input(cy+"(_>)─➤"+bl+" enter hash ID : "+wi)
     cpass.set('cred', 'hash', xhash)
     xphone = input(cy+"(_>)─➤"+bl+" enter phone number : "+wi)
     cpass.set('cred', 'phone', xphone)
